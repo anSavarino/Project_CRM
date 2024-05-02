@@ -14,6 +14,7 @@ import { OpportunitaComponent } from './opportunita/opportunita.component';
 import { ApppuntamentiComponent } from './apppuntamenti/apppuntamenti.component';
 import { HomeComponent } from './home/home.component';
 import { ClienteComponent } from './cliente/cliente.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ClienteComponent } from './cliente/cliente.component';
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync()

@@ -15,6 +15,8 @@ constructor(private clientiServ:ClienteService){}
 
 
 ngOnInit(): void {
-  this.listaClienti = this.clientiServ.getAllClienti();
+ this.clientiServ.getAllClienti().subscribe(clienti =>{
+  this.listaClienti = clienti;
+ });
 }
 }
