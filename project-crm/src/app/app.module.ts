@@ -13,6 +13,7 @@ import { ElencoClientiComponent } from './elenco-clienti/elenco-clienti.componen
 import { OpportunitaComponent } from './opportunita/opportunita.component';
 import { ApppuntamentiComponent } from './apppuntamenti/apppuntamenti.component';
 import { HomeComponent } from './home/home.component';
+import { ClienteComponent } from './cliente/cliente.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     ElencoClientiComponent,
     OpportunitaComponent,
     ApppuntamentiComponent,
-    HomeComponent
+    HomeComponent,
+    ClienteComponent
   ],
   imports: [
     BrowserModule,

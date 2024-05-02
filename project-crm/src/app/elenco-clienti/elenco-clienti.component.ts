@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Cliente } from '../cliente/model/cliente.model';
+import { ClienteService } from '../cliente.service';
 
 @Component({
   selector: 'app-elenco-clienti',
   templateUrl: './elenco-clienti.component.html',
   styleUrl: './elenco-clienti.component.css'
 })
-export class ElencoClientiComponent {
+export class ElencoClientiComponent implements OnInit{
 
+listaClienti: Cliente[];
+
+constructor(private clientiServ:ClienteService){}
+
+
+ngOnInit(): void {
+  this.listaClienti = this.clientiServ.getAllClienti();
+}
 }
