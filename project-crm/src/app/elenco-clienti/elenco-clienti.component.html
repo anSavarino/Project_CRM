@@ -1,8 +1,8 @@
-<h1>lista clienti</h1>
+<h1 class="mt-3">Lista Clienti</h1>
 
-<ul>
-    <li *ngFor="let clienti of listaClienti">
-        {{clienti.id_Cliente}} {{clienti.tipologia_Cliente}} {{clienti.utente_Associato.email}} {{clienti.categoria_Merceologica}}
-
-    </li>
-</ul>
+<div *ngFor="let clienti of listaClienti" class="card mb-3">
+    <div class="card-body">
+        <a [routerLink]="['/clienti', clienti.id_Cliente]" class="stretched-link"> </a>
+      {{clienti.utente_Associato.nome_Utente}}
+    </div>
+  </div>
